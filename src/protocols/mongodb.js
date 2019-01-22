@@ -8,7 +8,10 @@ const tryMongodb = async function (url) {
   }
 
   /* eslint-disable id-length */
-  const connection = await MongoClient.connect(url, { w: 1 });
+  const connection = await MongoClient.connect(url, {
+    w: 1,
+    useNewUrlParser: true
+  });
   /* eslint-enable id-length */
 
   await connection.close();
