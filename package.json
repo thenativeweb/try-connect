@@ -26,7 +26,7 @@
     "assertthat": "2.0.1",
     "common-tags": "1.8.0",
     "roboter": "3.0.4",
-    "shelljs": "0.8.3"
+    "shelljs": "0.8.5"
   },
   "scripts": {
     "build": "docker build -t thenativeweb/try-connect ."
